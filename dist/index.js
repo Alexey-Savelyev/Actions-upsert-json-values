@@ -14,7 +14,14 @@ function write(obj, field, value)
     {
         if (index === fieldParts.length - 1)
         {
-            obj[fieldPart] = value;
+            if(Number.isInteger(Number(value)))
+            {
+                obj[fieldPart] = Number(value);
+            }
+            else
+            {
+                obj[fieldPart] = value;
+            }
         }
         else
         {
