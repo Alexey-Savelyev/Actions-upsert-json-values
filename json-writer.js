@@ -8,7 +8,7 @@ function write(obj, field, value)
     {
         if (index === fieldParts.length - 1)
         {
-            if(Number.isInteger(Number(value)))
+            if(value.match(/^(-){0,1}\d+$/) != null || value.match(/^(-){0,1}\d+.\d+$/))
             {
                 obj[fieldPart] = Number(value);
             }
