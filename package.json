@@ -1,5 +1,5 @@
 {
-  "name": "actions-fill-json",
+  "name": "actions-upsert-json-values",
   "version": "1.0.0",
   "description": "This GitHub Action helps edit a JSON file and set a field value",
   "main": "index.js",
@@ -12,5 +12,6 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1"
-  }
+  },
+  "devDependencies": {}
 }

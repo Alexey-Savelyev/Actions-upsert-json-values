@@ -1,4 +1,4 @@
-# GitHub Action - Fill Json
+# GitHub Action - Upsert JSON values
 
 This GitHub Action helps edit a JSON file
 
@@ -7,12 +7,12 @@ This GitHub Action helps edit a JSON file
 
 Add this step in your workflow file
 ```yaml
-- name: 
-    uses: Alexey-Savelyev/Actions-fill-json@v1.0.0
+-   name: Fill settings.json
+    uses: Alexey-Savelyev/Actions-upsert-json-values@v1.1.0
     with:
-        file: settings.json
-        fields: "'field1'|'some.path.field2'|'field3'"
-        values: "'val1'|3|'val2'"
+        file: ./settings.json
+        fields: "field1|some.path.field2|field3"
+        values: "val1|2|3.3"
 ```
 
 ### Input Variables

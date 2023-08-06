@@ -1,4 +1,4 @@
-name: 'Fill JSON'
+name: 'Actions-upsert-json-values'
 description: 'This GitHub Action helps edit a JSON file'
 author: 'Alexey Savelyev'
 inputs:
@@ -7,10 +7,10 @@ inputs:
         description: "file name to edit (e.g. 'settings.json', 'path/settings.json')"
     fields:
         required: true
-        description: "array of fields to edit (e.g. 'field1'|'some.path.field2'|'field3')"
+        description: "array of fields to edit (e.g. 'field1|some.path.field2|field3')"
     values:
         required: true
-        description: "array of values to set (e.g. 'val1'|'val2'|3)"
+        description: "array of values to set (e.g. 'val1|2|3.3')"
 runs:
     using: 'node16'
     main: 'dist/index.js'
