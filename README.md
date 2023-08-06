@@ -8,7 +8,7 @@ This GitHub Action helps edit a JSON file
 Add this step in your workflow file
 ```yaml
 -   name: Fill settings.json
-    uses: Alexey-Savelyev/Actions-upsert-json-values@v1.1.0
+    uses: Alexey-Savelyev/Actions-upsert-json-values@v1.0.0
     with:
         file: ./settings.json
         fields: "field1|some.path.field2|field3"
