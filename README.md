@@ -1,6 +1,6 @@
 # GitHub Action - Upsert JSON values
 
-This GitHub Action helps edit a JSON file
+This GitHub Action helps to edit a JSON file
 
 
 ## Usage

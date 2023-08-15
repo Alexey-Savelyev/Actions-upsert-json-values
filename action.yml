@@ -1,5 +1,5 @@
 name: 'Actions-upsert-json-values'
-description: 'This GitHub Action helps edit a JSON file'
+description: 'This GitHub Action helps to edit a JSON file'
 author: 'Alexey Savelyev'
 inputs:
     file:
